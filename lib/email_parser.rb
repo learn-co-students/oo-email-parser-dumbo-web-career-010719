@@ -13,7 +13,7 @@ class EmailParser
     end
 
     def parse
-        unformat_string.split(/[\s,]/).join(" ").split(" ").uniq
+        unformat_string.split(/[\s,]+/).uniq
     end
 end
 

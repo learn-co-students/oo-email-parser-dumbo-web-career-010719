@@ -10,6 +10,7 @@ class EmailParser
     @emails = emails
   end
 
+#why do u not put the @@ before emails?
   def parse
     emails.delete(",").split.uniq
   end
